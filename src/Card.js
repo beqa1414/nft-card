@@ -1,7 +1,7 @@
 import React from "react";
-import "./App.css";
 import Rect from "./images/image-equilibrium.jpg";
 import Comb_shape from "./images/Combined Shape.png";
+import "./Card.css";
 
 function Card() {
   return (

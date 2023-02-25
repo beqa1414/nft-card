@@ -1,28 +1,38 @@
 import React from "react";
 import Rect from "./images/image-equilibrium.jpg";
 import Comb_shape from "./images/Combined Shape.png";
+import shape from "./images/Shape.png";
+import oval_img from "./images/Oval.png";
 import "./Card.css";
 
 function Card() {
   return (
-    <div className="container">
-      <div className="card-bg">
-        <img src={Rect} alt="rect" />
-        <div className="equil-text">
-          <h1 className="main-text">Equilibrium #3429</h1>
+    <div className="card">
+      <div className="image">
+        <img src={Rect} alt="" className="main-img" />
+      </div>
+      <div className="equil">
+        <h3>Equilibrium #3429</h3>
+      </div>
+      <div className="our-eqiul">
+        Our Equilibrium collection promotes <span>balance and calm.</span>
+      </div>
+      <div className="days-price">
+        <div className="price">
+          <img
+            src={Comb_shape}
+            alt="comb-shap"
+            style={{ width: "11px", height: "18px" }}
+          />
+          0.041 ETH
         </div>
-        <div className="our-eqiul">
-          <p className="our-equil-text">
-            Our Equilibrium collection promotes
-            <br /> balance and calm.
-          </p>
+        <div className="days">
+          <img scr={shape} alt="" />3 days left
         </div>
-        <div className="comb-shape">
-          <img src={Comb_shape} alt="comb-shap" />
-        </div>
-        <div className="eth">
-          <p className="text-eth">0.041 ETH</p>
-        </div>
+      </div>
+      <div className="oval-img">
+        <img src={oval_img} alt="" />
+        Creation of <span>Jules Wyvern</span>
       </div>
     </div>
   );

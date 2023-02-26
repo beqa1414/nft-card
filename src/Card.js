@@ -3,6 +3,7 @@ import Rect from "./images/image-equilibrium.jpg";
 import Comb_shape from "./images/Combined Shape.png";
 import shape from "./images/Shape.png";
 import oval_img from "./images/Oval.png";
+import shape_1 from "./images/Shape (1).png";
 import "./Card.css";
 
 function Card() {
@@ -10,6 +11,9 @@ function Card() {
     <div className="card">
       <div className="image">
         <img src={Rect} alt="" className="main-img" />
+      </div>
+      <div>
+        <img src={shape_1} alt="" />
       </div>
       <div className="equil">
         <h3>Equilibrium #3429</h3>
@@ -27,11 +31,11 @@ function Card() {
           0.041 ETH
         </div>
         <div className="days">
-          <img scr={shape} alt="" />3 days left
+          <img src={shape} alt="" />3 days left
         </div>
       </div>
       <div className="oval-img">
-        <img src={oval_img} alt="" />
+        <img src={oval_img} alt="" className="avatar" />
         Creation of <span>Jules Wyvern</span>
       </div>
     </div>

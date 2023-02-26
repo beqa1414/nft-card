@@ -23,13 +23,21 @@ body {
 
 } 
 .image{
-   border-radius: 8px;
+    border-radius: 8px;
+    position: relative;
+
+  }
+  .image div {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 255, 248, 1);
   }
   .main-img{
     width: 100%;
     height: 100%;
     border-radius: 8px;
   }
+  
   h3{
     font-family: 'Outfit';
     margin-top: 1.5rem;
@@ -37,6 +45,7 @@ body {
     line-height: 28px;
     color: #FFFFFF;
     font-weight: 600;
+    /* cursor: pointer; */
   }
   .our-eqiul{
     font-family: 'Outfit';
@@ -46,7 +55,10 @@ body {
     margin: 1.5rem 0 1rem 0;
     color: rgba(139, 172, 217, 1);
     line-height: 26px;
-    ;
+    
+  }
+  .our-eqiul span,h3{
+    cursor: pointer;
   }
   .price{
    font-family: 'Outfit';
@@ -58,23 +70,62 @@ body {
    align-items: center;
    color: #00FFF8;
    letter-spacing: 1px;
+   cursor: pointer;
   }
   .price img{
-    margin-right: 3px;
+    margin-right: 5px;
   }
-  .days{
+  .days-price{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid  rgba(46, 64, 90, 1);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
   }
+  .days{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8BACD9;
+    align-items: center;
+  }
+  .days img{
+    margin-right:  5px;
+  }
+  .oval-img{
+    display: flex;
+    align-items: center;
+    color: #8BACD9;;
+  }
+  .oval-img span{
+    color:  #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  .oval-img img{
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    width: 35px;
+  }
   
   /* span::before{
     content: "\a";
     white-space: pre;
   } */
-  
+  h3,span:hover{
+color: #00FFF8;
+  }
+  /* .eye-img{
+    position: absolute;
+    top: 0;
+    justify-content: center;
+  } */
   
   
   

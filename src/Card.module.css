@@ -51,16 +51,17 @@ body {
     cursor: pointer;
   }
   
-  h3{
+  .eqiul span{
     font-family: 'Outfit';
     margin-top: 1.5rem;
     font-size: 22px;
     line-height: 28px;
     color: #FFFFFF;
     font-weight: 600;
-    /* cursor: pointer; */
+    cursor: pointer;
   }
-  .our_eqiul{
+  
+  .our_eqiul {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 300;
@@ -135,7 +136,7 @@ body {
 color: #00FFF8;
   }
   
-  
+
   
   
  

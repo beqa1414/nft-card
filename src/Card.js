@@ -7,19 +7,22 @@ import shape_1 from "./images/Shape (1).png";
 import styles from "./Card.module.css";
 
 function Card() {
+  const showLight = true;
   return (
     <div className={styles.card}>
-      <div className={styles.image}>
-        <img src={Rect} alt="" className={styles.main_img} />
-        <div className={styles.eye}>
-          <img src={shape_1} alt="" className={styles.eye_img} />
+      {showLight ? (
+        <div className={styles.image}>
+          <img src={Rect} alt="" className={styles.main_img} />
+          <div className={styles.eye}>
+            <img src={shape_1} alt="" className={styles.eye_img} />
+          </div>
         </div>
-      </div>
-      <div className="equil">
-        <h3>Equilibrium #3429</h3>
+      ) : null}
+      <div className={styles.eqiul}>
+        <span>Equilibrium #3429</span>
       </div>
       <div className={styles.our_eqiul}>
-        Our Equilibrium collection promotes <span>balance and calm.</span>
+        Our Equilibrium collection promotes balance and calm.
       </div>
       <div className={styles.days_price}>
         <div className={styles.price}>

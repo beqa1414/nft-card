@@ -7,6 +7,8 @@ function App() {
         name="Equilibrium #3429"
         textName="Our Equilibrium collection promotes balance and calm."
         creation="Jules Wyvern"
+        days="3 days left"
+        ethText="0.041 ETH"
       />
     </div>
   );

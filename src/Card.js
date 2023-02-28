@@ -6,7 +6,7 @@ import oval_img from "./images/Oval.png";
 import shape_1 from "./images/Shape (1).png";
 import styles from "./Card.module.css";
 
-function Card({ name, textName, creation }) {
+function Card({ name, textName, creation, days, ethText }) {
   const showLight = true;
   const showMainText = true;
   const avatar = true;
@@ -31,10 +31,11 @@ function Card({ name, textName, creation }) {
             alt=""
             style={{ width: "11px", height: "18px" }}
           />
-          0.041 ETH
+          {ethText}
         </div>
         <div className={styles.days}>
-          <img src={shape} alt="" />3 days left
+          <img src={shape} alt="" />
+          {days}
         </div>
       </div>
       <div className={styles.oval_img}>

@@ -11,9 +11,9 @@ function Card() {
     <div className="card">
       <div className="image">
         <img src={Rect} alt="" className="main-img" />
-      </div>
-      <div>
-        <img src={shape_1} alt="" />
+        <div className="eye">
+          <img src={shape_1} alt="" className="eye-img" />
+        </div>
       </div>
       <div className="equil">
         <h3>Equilibrium #3429</h3>

@@ -6,7 +6,7 @@ import oval_img from "./images/Oval.png";
 import shape_1 from "./images/Shape (1).png";
 import styles from "./Card.module.css";
 
-function Card({ name }) {
+function Card({ name, textName }) {
   const showLight = true;
   return (
     <div className={styles.card}>
@@ -21,9 +21,7 @@ function Card({ name }) {
       <div className={styles.eqiul}>
         <span>{name}</span>
       </div>
-      <div className={styles.our_eqiul}>
-        Our Equilibrium collection promotes balance and calm.
-      </div>
+      <div className={styles.our_eqiul}>{textName}</div>
       <div className={styles.days_price}>
         <div className={styles.price}>
           <img

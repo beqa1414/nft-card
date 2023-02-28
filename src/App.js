@@ -6,6 +6,7 @@ function App() {
       <Card
         name="Equilibrium #3429"
         textName="Our Equilibrium collection promotes balance and calm."
+        creation="Jules Wyvern"
       />
     </div>
   );

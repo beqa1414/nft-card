@@ -6,9 +6,10 @@ import oval_img from "./images/Oval.png";
 import shape_1 from "./images/Shape (1).png";
 import styles from "./Card.module.css";
 
-function Card({ name, textName }) {
+function Card({ name, textName, creation }) {
   const showLight = true;
-  const ShowMainText = true;
+  const showMainText = true;
+  const avatar = true;
   return (
     <div className={styles.card}>
       {showLight ? (
@@ -20,7 +21,7 @@ function Card({ name, textName }) {
         </div>
       ) : null}
       <div className={styles.eqiul}>
-        <span>{ShowMainText ? name : null}</span>
+        <span>{showMainText ? name : null}</span>
       </div>
       <div className={styles.our_eqiul}>{textName}</div>
       <div className={styles.days_price}>
@@ -37,8 +38,8 @@ function Card({ name, textName }) {
         </div>
       </div>
       <div className={styles.oval_img}>
-        <img src={oval_img} alt="" className="avatar" />
-        Creation of <span>Jules Wyvern</span>
+        <img src={oval_img} alt="" />
+        Creation of {avatar ? <span>{creation}</span> : null}
       </div>
     </div>
   );

@@ -6,10 +6,10 @@ import oval_img from "./images/Oval.png";
 import shape_1 from "./images/Shape (1).png";
 import styles from "./Card.module.css";
 
-function Card({ name, textName, creation, days, ethText }) {
-  const showLight = true;
-  const showMainText = true;
-  const avatar = true;
+function Card({ name, textName, creation, creation2, days, ethText }) {
+  let showLight = true;
+  let showMainText = true;
+
   return (
     <div className={styles.card}>
       {showLight ? (
@@ -40,7 +40,7 @@ function Card({ name, textName, creation, days, ethText }) {
       </div>
       <div className={styles.oval_img}>
         <img src={oval_img} alt="" />
-        Creation of {avatar ? <span>{creation}</span> : null}
+        Creation of {true ? <span>{creation}</span> : <span>{creation2}</span>}
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import styles from "./Card.module.css";
 
 function Card({ name, textName }) {
   const showLight = true;
+  const ShowMainText = true;
   return (
     <div className={styles.card}>
       {showLight ? (
@@ -19,7 +20,7 @@ function Card({ name, textName }) {
         </div>
       ) : null}
       <div className={styles.eqiul}>
-        <span>{name}</span>
+        <span>{ShowMainText ? name : null}</span>
       </div>
       <div className={styles.our_eqiul}>{textName}</div>
       <div className={styles.days_price}>

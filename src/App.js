@@ -10,6 +10,7 @@ function App() {
         creation2="Beka Shamugia"
         days="3 days left"
         ethText="0.041 ETH"
+        color="yellow"
       />
     </div>
   );

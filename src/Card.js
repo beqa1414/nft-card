@@ -10,8 +10,18 @@ function Card(props) {
   let showLight = true;
   let showMainText = true;
 
+  const cardStyle = {
+    card: {
+      backgroundColor: "hsl(216, 50%, 16%)",
+      borderRadius: "15px",
+      boxShadow: "0px 25px 50px",
+      width: "302px",
+      padding: "1.5rem",
+    },
+  };
+
   return (
-    <div className={styles.card}>
+    <div style={{ ...cardStyle.card, backgroundColor: props.color }}>
       {showLight ? (
         <div className={styles.image}>
           <img src={Rect} alt="" className={styles.main_img} />

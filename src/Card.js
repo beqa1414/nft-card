@@ -12,13 +12,19 @@ function Card(props) {
 
   const cardStyle = {
     card: {
-      backgroundColor: "hsl(216, 50%, 16%)",
       borderRadius: "15px",
       boxShadow: "0px 25px 50px",
       width: "302px",
       padding: "1.5rem",
     },
   };
+  // let CardStyle1;
+  // if (showColor) {
+  //   CardStyle1 = props.color;
+  // } else {
+  //   CardStyle1 = 1;
+  // }
+  // console.log(CardStyle1);
 
   return (
     <div style={{ ...cardStyle.card, backgroundColor: props.color }}>

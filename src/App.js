@@ -1,4 +1,5 @@
 import Card from "./Card";
+import "./App.css";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         creation2="Beka Shamugia"
         days="3 days left"
         ethText="0.041 ETH"
-        color="yellow"
+        color="hsl(216, 50%, 16%)"
       />
     </div>
   );

@@ -6,7 +6,7 @@ import oval_img from "./images/Oval.png";
 import shape_1 from "./images/Shape (1).png";
 import styles from "./Card.module.css";
 
-function Card({ name, textName, creation, creation2, days, ethText }) {
+function Card(props) {
   let showLight = true;
   let showMainText = true;
 
@@ -21,9 +21,9 @@ function Card({ name, textName, creation, creation2, days, ethText }) {
         </div>
       ) : null}
       <div className={styles.eqiul}>
-        <span>{showMainText ? name : null}</span>
+        <span>{showMainText ? props.name : null}</span>
       </div>
-      <div className={styles.our_eqiul}>{textName}</div>
+      <div className={styles.our_eqiul}>{props.textName}</div>
       <div className={styles.days_price}>
         <div className={styles.price}>
           <img
@@ -31,16 +31,17 @@ function Card({ name, textName, creation, creation2, days, ethText }) {
             alt=""
             style={{ width: "11px", height: "18px" }}
           />
-          {ethText}
+          {props.ethText}
         </div>
         <div className={styles.days}>
           <img src={shape} alt="" />
-          {days}
+          {props.days}
         </div>
       </div>
       <div className={styles.oval_img}>
         <img src={oval_img} alt="" />
-        Creation of {true ? <span>{creation}</span> : <span>{creation2}</span>}
+        Creation of{" "}
+        {true ? <span>{props.creation}</span> : <span>{props.creation2}</span>}
       </div>
     </div>
   );
